@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Bilangan Prima</title>
+	<script language="JavaScript">
+	var input = prompt("Masukkan Nilai (angka positif):");
+	var prima = false;
+
+	document.write("Bilangan Prima antara 1 sampai "+" "+input+" "+"adalah"+" "+":"+"<br>");
+	for (i=2; i<=input; i++){
+		prima = true;
+		for(j=2; j<i; j++){
+		    if(i%j==0){
+		       prima=false;
+		    }
+		}
+
+	  	if(prima==true){
+		 	document.write(i + " ");
+		}
+	}
+	</script>
+</head>
+<body>
+</body>
+</html>

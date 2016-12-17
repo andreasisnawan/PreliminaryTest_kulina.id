@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Bilangan Prima</title>
+	<script language="JavaScript">
+	var input = prompt("Masukkan Nilai (angka positif):");
+
+	function fibonacci(num) {
+		if (num <= 1) return 1;
+
+	  	return fibonacci(num - 1) + fibonacci(num - 2);
+	}
+
+	document.write("Deret fibonacci dengan nilai masukkan "+" "+input+" "+"adalah"+" "+":"+"<br>");
+	for (i=0; i<=input; i++){
+		document.write(fibonacci(i) + " ");
+	}
+	</script>
+</head>
+<body>
+</body>
+</html>
